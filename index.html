@@ -1,0 +1,34 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 06</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <h1>Ejercicio 06</h1>
+  <div id="resultado" class="resultado"></div>
+<script>
+let valor = 1000;
+let resultado = document.getElementById("resultado");
+
+if (valor < 100) {
+  resultado.innerText = " Antes de los rangos.";
+  resultado.classList.add("info");
+} else if (valor >= 100 && valor <= 300) {
+  resultado.innerText = " Primer rango (100-300).";
+  resultado.classList.add("ok");
+} else if (valor > 300 && valor < 500) {
+  resultado.innerText = " Entre los rangos .";
+  resultado.classList.add("error");
+} else if (valor >= 500 && valor <= 800) {
+  resultado.innerText = " Segundo rango (500-800).";
+  resultado.classList.add("ok");
+} else {
+  resultado.innerText = "Después de los rangos.";
+  resultado.classList.add("info");
+}
+
+</script>
+</body>
+</html>
